@@ -26,17 +26,17 @@ function timedateyear() {
     let hrs = time.getHours();
     let mins = time.getMinutes();
     let secs = time.getSeconds();
-    let period = "AM";
+    let period = "am"
+
+    if (hrs >= 12) {
+        period = 'PM'
+    }
     var formatValue = formatSwtichbtn.getAttribute("data-format");
     if (formatValue === "12") {
         hrs = hrs > 12 ? hrs % 12 : hrs;
     }
 
 
-    if (hrs >= 12) {
-        period = "PM";
-
-    }
 
     if (hrs < 10) {
         hrs = "0" + hrs;

@@ -228,3 +228,42 @@ a{
     text-decoration:none;
     color:white;
 }
+@media (max-width:425px) {
+    .digital-clock {
+        width: 360px;
+    }
+    .time{
+        padding-top: 20px;
+    }
+    .menu-img {
+        position: absolute;
+        width: 1.6em;
+        padding-top: 5px;
+        margin-right: 5px;
+        margin-left: 8px;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+    
+    }
+}
+@media (max-width:338px){
+    .digital-clock {
+        width: 100%;
+    }
+    .time{
+    
+        padding-right:8px;
+    }
+    .hour,
+.minutes {
+    font-size: 6em;
+   
+}
+.hour{
+    margin-left: 5px;
+}
+.right-side{
+    margin-right: 5px;
+}
+}
